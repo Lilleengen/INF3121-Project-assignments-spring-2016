@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="go_to_frontpage">x: Go to frontpage</a></td></tr>
+<tr><td><a href="create_user_without_email">N1-1: Create user without email</a></td></tr>
+<tr><td><a href="back_to_frontpage">x: Back to frontpage</a></td></tr>
+<tr><td><a href="create_user_errer_passord_repeat">N1-2: Create user error password repeat</a></td></tr>
+<tr><td><a href="create_user">1: Create user</a></td></tr>
+<tr><td><a href="log_in_wrong_password">N2: Log in wrong password</a></td></tr>
+<tr><td><a href="log_in">2: Log in</a></td></tr>
+<tr><td><a href="change_password_error_password_repeat">N3: Change password error password repeat</a></td></tr>
+<tr><td><a href="change_password_error_current_password">N3: Change password error current password</a></td></tr>
+<tr><td><a href="change_password">3: Change password</a></td></tr>
+<tr><td><a href="log_in_new_password">2: Login new password</a></td></tr>
+<tr><td><a href="request_password_reset">4: Request password reset</a></td></tr>
+<tr><td><a href="reset_password_email_error_password_repeat">N4: Reset password email error password repeat</a></td></tr>
+<tr><td><a href="reset_password_email">4: Reset password email</a></td></tr>
+<tr><td><a href="log_in_password_reset">2: Login password reset</a></td></tr>
+<tr><td><a href="checkout_empty_cart">N7: Checkout empty cart</a></td></tr>
+<tr><td><a href="add_mac_to_cart">5: Add mac to cart</a></td></tr>
+<tr><td><a href="add_sofa_to_cart">5: Add sofa to cart</a></td></tr>
+<tr><td><a href="change_number_of_sofas_in_cart">6: Change number of sofas in cart</a></td></tr>
+<tr><td><a href="remove_first_item_from_cart">6: Remove first item from cart</a></td></tr>
+<tr><td><a href="checkout">7: Checkout</a></td></tr>
+<tr><td><a href="continue_shopping">8: Continue shopping</a></td></tr>
+<tr><td><a href="add_new_mac_to_cart">8: Add new mac to cart</a></td></tr>
+<tr><td><a href="checkout_with_error">N9: Checkout with error</a></td></tr>
+<tr><td><a href="checkout_for_real">9: Checkout for real</a></td></tr>
+<tr><td><a href="log_out">10: Log out</a></td></tr>
+</tbody></table>
+</body>
+</html>

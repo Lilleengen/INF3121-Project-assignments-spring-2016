@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://demo.avactis.com/" />
+<title>Change number of sofas in cart</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Change number of sofas in cart</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My cart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1</td>
+	<td>Shopping Cart</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=quantity_in_cart[1]</td>
+	<td>label=2</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//form[@id='Product_Quan']/table/tbody/tr[3]/td[4]/strong</td>
+	<td>p1</td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>//form[@id='Product_Quan']/table/tbody/tr[3]/td[5]/strong</td>
+	<td>${p1}</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='Product_Quan']/table/tbody/tr[3]/td[5]/strong</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//form[@id='Product_Quan']/table/tbody/tr[3]/td[5]/strong</td>
+	<td>p2</td>
+</tr>
+<tr>
+	<td>verifyExpression</td>
+	<td>javascript{(Number(storedVars['p1'].replace(/[^0-9\.]+/g,&quot;&quot;))*2 == Number(storedVars['p2'].replace(/[^0-9\.]+/g,&quot;&quot;))) ? &quot;true&quot; : &quot;false&quot;;}</td>
+	<td>true</td>
+</tr>
+</tbody></table>
+</body>
+</html>

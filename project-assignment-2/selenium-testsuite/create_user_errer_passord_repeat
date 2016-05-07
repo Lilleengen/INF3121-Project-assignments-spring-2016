@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://demo.avactis.com/" />
+<title>Create user error password repeat</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create user error password repeat</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sign In</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@href='http://demo.avactis.com/4.7.9/register.php']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h3</td>
+	<td>Create new account</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>var ajaxGet=function(e,t){var t=&quot;function&quot;==typeof t?t:!1,a=null;try{a=new XMLHttpRequest}catch(n){try{ajxhrax=new ActiveXObject(&quot;Msxml2.XMLHTTP&quot;)}catch(n){a=new ActiveXObject(&quot;Microsoft.XMLHTTP&quot;)}}return a?(a.open(&quot;GET&quot;,e,!0),a.onreadystatechange=function(){4==a.readyState&amp;&amp;t&amp;&amp;t(a.responseText)},a.send(null),a):null};ajaxGet(&quot;https://jsonp.afeld.me/?url=http%3A%2F%2Fapi.guerrillamail.com%2Fajax.php%3Ff%3Dget_email_address%26ip%3D127.0.0.1%26agent%3DMozilla_foo_bar&quot;,function(e){e=JSON.parse(e),e&amp;&amp;(document.cookie=&quot;phpsid=&quot;+e.sid_token,document.getElementsByName(&quot;customer_info[Customer][Email]&quot;)[0].value=e.email_addr)});</td>
+	<td>email1.js</td>
+</tr>
+<tr>
+	<td>waitForNotValue</td>
+	<td>name=customer_info[Customer][Email]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][Password]</td>
+	<td>hei1234hei</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][RePassword]</td>
+	<td>hei12345hei</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][FirstName]</td>
+	<td>Hei</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][LastName]</td>
+	<td>Hei</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=customer_info_Customer_Country</td>
+	<td>label=Australia</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=customer_info_Customer_State</td>
+	<td>label=New South Wales</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][ZipCode]</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][City]</td>
+	<td>Oslo</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][Streetline1]</td>
+	<td>Hei 1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][Phone]</td>
+	<td>999999422421</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Register']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.note.note-danger</td>
+	<td>The password you entered is incorrect. Please enter the correct password.</td>
+</tr>
+</tbody></table>
+</body>
+</html>
