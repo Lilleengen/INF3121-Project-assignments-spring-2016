@@ -4,4 +4,4 @@
 See pa2-problem.pdf and pa2-paper.pdf to see the project assignment.
  
 ## Feedback
-**No yet**
+**No feedback yet**
